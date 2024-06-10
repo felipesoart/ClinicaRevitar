@@ -58,11 +58,11 @@
         }
 
         /* Ajustes para telas maiores */
-        @media screen and (min-height: 800px) {
+        @media screen and (min-width: 412px) {
           			
             .texto {
 				font-size: 200%;
-				margin: 0px 80px 0px 80px !important;
+				   margin: 10px; !important;
             }
 
             .texto p{
@@ -88,6 +88,38 @@
 			}
 
         }
+		
+		/* Ajustes para telas maiores */
+        @media screen and (min-width: 360px) {
+          			
+            .texto {
+				font-size: 150%;
+				   margin: 10px; !important;
+            }
+
+            .texto p{
+				text-align: justify;
+            }
+
+            .imagem {
+                flex: 1;
+                margin: 40px;        
+                width: 80% !important; /* Defina aqui a largura desejada para a imagem */
+                height: auto;
+                border-radius: 50px !important;
+            }
+			
+			    .container, .container-md, .container-sm {
+						max-width: 880px;
+					}
+				}
+
+			.divCell {
+				
+				padding: 15px;
+			}
+
+        }
 
         /* Posicionamento das imagens */
         .img1 {
@@ -110,10 +142,11 @@
             justify-content: space-around;
             padding: 20px;
         }
+		
         .texto {
             flex: 1;
-            margin: 0px 150px 0px 150px;
-            
+            margin: 10px;
+            font-size: 100%;
         }
 
 		
@@ -153,6 +186,7 @@
                </div>
                <div class="divCell"></div>
 				<div class="row align-items-center texto">
+					<h2 style="text-align:center"><strong>Profissionais</strong></h2><br>
 					<h2 style="text-align:center"><strong>Malu Ávila Sobrinho de Vasconcelos (Farmacêutica)</strong></h2>
 					<div class="col-lg-4 imagem">
 						<img src="https://raw.githubusercontent.com/felipesoart/ClinicaRevitar/main/equipe1.png" alt="Malu Ávila Sobrinho de Vasconcelos" class="profile-img">
